@@ -1,0 +1,421 @@
+/* ==============================================================
+   CAREERS PAGE — CLEAN PROFESSIONAL STYLE
+   ============================================================== */
+
+:root {
+  --primary: #0d6efd;
+  --primary-dark: #0056b3;
+  --bg-light: #f8f9fa;
+  --text-dark: #212529;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* === General Page === */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+/* ==============================================================
+   HERO SECTION
+   ============================================================== */
+.careers-hero {
+  background: linear-gradient(rgba(13,110,253,0.85), rgba(0,86,179,0.85)),
+              url("../img/career-bg.jpg") center/cover no-repeat;
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.careers-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.careers-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.btn-cta {
+  display: inline-block;
+  background: #fff;
+  color: var(--primary);
+  font-weight: 600;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* ==============================================================
+   WHY JOIN US
+   ============================================================== */
+.why-join {
+  background: #fff;
+  padding: 80px 0;
+}
+
+.why-join h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.why-join ul li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+/* ==============================================================
+   JOB OPENINGS SECTION
+   ============================================================== */
+.job-openings {
+  padding: 80px 0;
+  background: var(--bg-light);
+}
+
+.job-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 14px var(--shadow);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.job-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+.job-card h3 {
+  color: var(--primary-dark);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.job-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.job-card .tags span {
+  background: #e9f3ff;
+  color: var(--primary);
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.btn-apply {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-apply:hover {
+  background: var(--primary-dark);
+}
+
+/* ==============================================================
+   APPLY NOW MODAL
+   ============================================================== */
+.modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.modal-header {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 12px 12px 0 0;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+.modal-body label {
+  font-weight: 600;
+  color: #333;
+}
+
+.modal-body .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.modal-body .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+  outline: none;
+}
+
+.modal-footer .btn-primary {
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.modal-footer .btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+/* ==============================================================
+   CTA SECTION
+   ============================================================== */
+.cta-section {
+  background: linear-gradient(120deg, var(--primary-dark), var(--primary));
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-section .btn-cta {
+  background: #fff;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.cta-section .btn-cta:hover {
+  background: #f1f1f1;
+}
+
+/* ==============================================================
+   ANIMATIONS
+   ============================================================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==============================================================
+   RESPONSIVE
+   ============================================================== */
+@media (max-width: 768px) {
+  .careers-hero h1 {
+    font-size: 2.3rem;
+  }
+  .job-card {
+    padding: 20px;
+  }
+}
+.current-openings {
+  background: linear-gradient(135deg, #f9fafc, #e8ecf3);
+}
+
+.job-card {
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.modal-content {
+  border-radius: 1rem;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-backdrop.show {
+  opacity: 0.85 !important;
+}
+
+.modal-body input[type="text"],
+.modal-body input[type="email"],
+.modal-body input[type="tel"],
+.modal-body input[type="file"] {
+  border-radius: 0.5rem;
+}
+/* ============================================
+   HERO SECTION — Fixed Overlap & Center Layout
+=============================================== */
+.careers-hero {
+  position: relative;
+  width: 100%;
+  min-height: 90vh; /* Ensures full section height */
+  background: linear-gradient(135deg, #1e90ff, #007bff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  margin-top: 70px; /* fixes navbar overlap */
+}
+
+.careers-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.careers-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #f8f9fa;
+}
+
+.careers-hero .btn {
+  background-color: #fff;
+  color: #007bff;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.careers-hero .btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Animated light effect background */
+.careers-hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 10%, transparent 70%);
+  animation: rotateGlow 12s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.careers-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Job Cards */
+.job-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Sections */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background: #1e90ff;
+    color: white;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+/* Hero Section */
+.careers-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.careers-hero .container {
+  position: relative;
+  z-index: 2; /* content stays above animation */
+}
+
+/* Animated background layer */
+.careers-hero .hero-animation {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 20%, transparent 70%);
+  animation: pulse 8s linear infinite;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+       

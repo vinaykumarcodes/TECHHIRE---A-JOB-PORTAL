@@ -1,0 +1,169 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechHire – Login / Sign Up</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #003366, #0055cc);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background: #fff;
+      width: 380px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .form-toggle {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .form-toggle button {
+      width: 50%;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      background: #f1f1f1;
+      font-weight: bold;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .form-toggle button.active {
+      background: linear-gradient(135deg, #004080, #0073e6);
+      color: #fff;
+    }
+
+    .form {
+      display: none;
+      animation: fadeIn 0.5s;
+    }
+
+    .form.active {
+      display: block;
+    }
+
+    .form input {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .form button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #004080, #0073e6);
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .form button:hover {
+      background: linear-gradient(135deg, #003366, #0055cc);
+    }
+
+    .form a {
+      display: block;
+      text-align: right;
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #0073e6;
+      text-decoration: none;
+    }
+
+    .form a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Show Django messages -->
+  <div class="container position-absolute top-0 mt-3">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  <!-- Login & Signup Form -->
+  <div class="form-container">
+    <div class="form-toggle">
+      <button id="loginBtn" class="active" onclick="showForm('login')">Login</button>
+      <button id="signupBtn" onclick="showForm('signup')">Signup</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="form active" method="post">
+      {% csrf_token %}
+      <input type="hidden" name="login" value="1">
+      <input type="text" name="email" placeholder="Email or Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <a href="#">Forgot password?</a>
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Signup Form -->
+    <form id="signupForm" class="form" method="post">
+      {% csrf_token %}
+      <input type="hidden" name="signup" value="1">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="password" name="password1" placeholder="Password" required>
+      <input type="password" name="password2" placeholder="Confirm Password" required>
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap + Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function showForm(formType) {
+      document.getElementById('loginForm').classList.remove('active');
+      document.getElementById('signupForm').classList.remove('active');
+      document.getElementById('loginBtn').classList.remove('active');
+      document.getElementById('signupBtn').classList.remove('active');
+
+      if (formType === 'login') {
+        document.getElementById('loginForm').classList.add('active');
+        document.getElementById('loginBtn').classList.add('active');
+      } else {
+        document.getElementById('signupForm').classList.add('active');
+        document.getElementById('signupBtn').classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Projects - TechHire</title>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+  <link rel="stylesheet" href="{% static 'css/ourprojects.css' %}">
+</head>
+<body>
+
+<!-- Navbar (unchanged) -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="{% static 'img/logo1.png' %}" alt="Logo" style="height:50px;">
+        <span>TechHire</span>
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/what_we_are">WHAT WE ARE</a></li>
+        <li><a href="/ourprojects">OUR PROJECTS</a></li>
+        <li><a href="/careers">CAREERS</a></li>
+        <li><a href="#myFooter">CONTACT</a></li>
+        <li class="nav-item">
+          <a class="nav-link {% if request.path == '/loginandsignup/' %}active{% endif %}" href="{% url 'loginandsignup' %}">LOGIN / SIGNUP</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <h1>Our Projects</h1>
+  <div class="underline"></div>
+  <p>Discover our journey of innovation and impactful solutions across industries.</p>
+</section>
+
+<!-- Projects Grid -->
+<section class="projects-grid py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="project-card p-3 text-center">
+          <img src="{% static 'img/p1.jpg' %}" alt="DelveIP" class="img-fluid mb-3">
+          <h3>DelveIP</h3>
+          <p>Technology platforms for delivering complete IP services in the areas of protection, research, and commercialization.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="project-card p-3 text-center">
+          <img src="{% static 'img/p3.jpg' %}" alt="SpielData" class="img-fluid mb-3">
+          <h3>SpielData</h3>
+          <p>Focused on data mining, offering, and analysis to help businesses harness the power of information.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="project-card p-3 text-center">
+          <img src="{% static 'img/p4.jpg' %}" alt="Eduforcareer" class="img-fluid mb-3">
+          <h3>Eduforcareer</h3>
+          <p>Helping graduates practice aptitude and elevate their careers with innovative learning approaches.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Project 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="project-card p-3 text-center">
+          <img src="{% static 'img/p5.jpg' %}" alt="WeUnita" class="img-fluid mb-3">
+          <h3>WeUnita</h3>
+          <p>A healthcare solution offering patient record management, telemedicine, and AI-driven diagnostics.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="project-card p-3 text-center">
+          <img src="{% static 'img/p6.png' %}" alt="Hello properties" class="img-fluid mb-3">
+          <h3>Hello Properties</h3>
+          <p>A financial analytics platform providing insights, portfolio tracking, and risk assessment tools.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="project-card p-3 text-center">
+          <img src="{% static 'img/p7.jpg' %}" alt="IIPF" class="img-fluid mb-3">
+          <h3>IIPF</h3>
+          <p>An AI-powered learning platform that personalizes study plans and interactive content for students.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- Timeline Section -->
+<section class="timeline">
+  <div class="timeline-item left">
+    <div class="content">
+      <h4>DELVEIP</h4>
+      <p>We have pioneered technology platforms for delivering complete IP services in the areas of IP protection, IP research and IP commercialization. Our technology expertise ensures that we can scale as per our client and by remaining flexible in fulfilling their requirements.</p>
+    </div>
+  </div>
+  <div class="timeline-item right">
+    <div class="content">
+      <h4>SPIELDATA</h4>
+      <p>Center business fixation is information mining, offering and examination, as our group with advanced technical know-how and experience can provide customers with perfection on which they can fully depend.</p>
+    </div>
+  </div>
+  <div class="timeline-item left">
+    <div class="content">
+      <h4>Eduforcareer</h4>
+      <p>Eduforcareer attempts sincere endeavors so Fresh Technical Graduates can practice Aptitude and raise their careers. We give our earnest attempts and see how our future generation excels in gaining knowledge and getting a right platform to practice without obstacles, completely free of cost.</p>
+    </div>
+  </div>
+  <div class="timeline-item right">
+    <div class="content">
+      <h4>WeUnita</h4>
+      <p>A platform for uniting professionals to explore, share, follow, search, learn, acquaint, source and more.</p>
+    </div>
+  </div>
+  <div class="timeline-item right">
+    <div class="content">
+      <h4>IIPF</h4>
+      <p>IIPF makes it easier to understand the procedure, practices and pricing of filing internationally with ease.</p>
+    </div>
+  </div>
+  <div class="timeline-item left">
+    <div class="content">
+      <h4>Hello Properties</h4>
+      <p>Experienced in this segment for more than two decades, including cutting-edge and innovative technology to make the process of buying, selling, or renting as simple as making a phone call.</p>
+    </div>
+  </div>
+  <div style="clear: both;"></div> <!-- ensures footer never overlaps -->
+</section>
+
+<div style="clear: both;"></div>
+<div style="height:80px;"></div>
+
+<!-- Footer -->
+<footer class="footer" id="myFooter">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3><i class="fas fa-industry"></i> Industries</h3>
+      <ul>
+        <li>Information Technology</li>
+        <li>Banking & Finance</li>
+        <li>Healthcare</li>
+        <li>Manufacturing</li>
+        <li>Retail</li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+      <p>517, 3rd Floor,<br>R Cube Building,<br>Noida, Uttar Pradesh<br>India - 201301</p>
+      <p><i class="fas fa-phone"></i> +91-9876543210</p>
+      <p><i class="fas fa-envelope"></i> info@jobportal.com</p>
+    </div>
+    <div class="footer-box">
+      <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 TechHire. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/ourprojects.js' %}"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".project-card, .timeline-item");
+
+    function revealOnScroll() {
+      const triggerBottom = window.innerHeight * 0.85; // trigger when 85% visible
+
+      elements.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          el.classList.add("active");
+        }
+      });
+    }
+
+    // Run on scroll
+    window.addEventListener("scroll", revealOnScroll);
+    // Run on page load
+    revealOnScroll();
+  });
+</script>
+
+</body>
+</html>

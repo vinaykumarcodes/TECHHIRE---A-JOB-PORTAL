@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Are - TechHire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            background: #f9f9f9;
+        }
+        .section-header {
+            text-align: center;
+            padding: 60px 20px 20px;
+            background: linear-gradient(to right, #0d47a1, #29b6f6);
+            color: white;
+        }
+        .section-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .section-header p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: auto;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 60px 10%;
+        }
+        .feature-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .feature-box i {
+            font-size: 2.5rem;
+            color: #29b6f6;
+            margin-bottom: 15px;
+        }
+        .feature-box h3 {
+            margin-bottom: 10px;
+            color: #0d47a1;
+        }
+        .feature-box p {
+            font-size: 0.95rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Section Header -->
+    <div class="section-header">
+        <h1>What We Are</h1>
+        <p>We are a technology-driven company passionate about innovation, problem-solving, and delivering excellence to industries worldwide.</p>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features">
+        <div class="feature-box">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Innovation</h3>
+            <p>We create cutting-edge solutions that transform industries with the latest technologies.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-users"></i>
+            <h3>Collaboration</h3>
+            <p>Our team thrives on partnerships and knowledge-sharing to build impactful products.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Trust & Quality</h3>
+            <p>We deliver reliable, secure, and scalable solutions trusted by enterprises worldwide.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-globe"></i>
+            <h3>Global Reach</h3>
+            <p>With a worldwide presence, we aim to make technology accessible to all businesses.</p>
+        </div>
+    </div>
+
+</body>
+</html>

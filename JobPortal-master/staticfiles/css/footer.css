@@ -1,0 +1,409 @@
+.footer {
+    background-color: #0a2d57;  /* single background */
+    color: #fff;
+    padding: 40px 0 0 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.footer-container {
+    background: transparent; /* ensure no extra background */
+}
+
+
+
+
+
+
+#myFooter .footer-copyright {
+    background-color: #0a2d57 !important; /* match .footer background */
+    padding-top: 3px !important;
+    padding-bottom: 50px !important;
+}
+.text-uppercase {
+  text-transform: uppercase; 
+  line-height: 1;
+}
+b, strong, .text-strong {
+  font-weight: 700;
+}
+
+
+.right {float:right;}
+.left {float:left;} 
+.center{float: center;}
+
+/*social icons*/
+.social-nav {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  margin: 10px auto;
+}
+.social-nav li {
+  display: inline-block;
+}
+.social-nav a {
+  display: inline-block;
+  float: left;
+  width: 28px;
+  height: 28px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 28px;
+  background: #000;
+  position: relative;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.model-7 li {
+  margin: 0 10px;
+}
+.model-7 a {
+  background: none;
+  -moz-box-shadow: 0 0 4px 3px;
+  -webkit-box-shadow: 0 0 4px 3px;
+  box-shadow: 0 0 4px 3px;
+  text-shadow: 0 0 1px #333;
+  -moz-transition: -moz-transform 0.4s, background 0.4s;
+  -o-transition: -o-transform 0.4s, background 0.4s;
+  -webkit-transition: -webkit-transform 0.4s, background 0.4s;
+  transition: transform 0.4s, background 0.4s;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.model-7 a .fa {
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.model-7 a:hover {
+  background: #fff;
+}
+.model-7 a:hover .fa {
+  -moz-transform: rotate(-10deg) scale(3);
+  -ms-transform: rotate(-10deg) scale(3);
+  -webkit-transform: rotate(-10deg) scale(3);
+  transform: rotate(-5deg) scale(3);
+}
+.model-7 .twitter {
+  color: #00ACED!important;
+}
+.model-7 .facebook {
+  color: #3B579D!important;
+}
+.model-7 .google-plus {
+  color: #DD4A3A!important;
+}
+.model-7 .linkedin {
+  color: #007BB6!important;
+}
+.model-7 .pinterest {
+  color: #CB2026!important;
+}
+
+
+
+
+
+
+@media(min-width: 360px)and(max-width: 768px){
+  .social-nav {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  margin: 10px auto;
+}
+.social-nav li {
+  display: inline-block;
+}
+.social-nav a {
+  display: inline-block;
+  float: left;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 48px;
+  background: #000;
+  position: relative;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.model-7 li {
+  margin: 0 10px;
+}
+.model-7 a {
+  background: none;
+  -moz-box-shadow: 0 0 4px 3px;
+  -webkit-box-shadow: 0 0 4px 3px;
+  box-shadow: 0 0 4px 3px;
+  text-shadow: 0 0 1px #333;
+  -moz-transition: -moz-transform 0.4s, background 0.4s;
+  -o-transition: -o-transform 0.4s, background 0.4s;
+  -webkit-transition: -webkit-transform 0.4s, background 0.4s;
+  transition: transform 0.4s, background 0.4s;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.model-7 a .fa {
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+.model-7 a:hover {
+  background: #fff;
+}
+.model-7 a:hover .fa {
+  -moz-transform: rotate(-10deg) scale(2);
+  -ms-transform: rotate(-10deg) scale(2);
+  -webkit-transform: rotate(-10deg) scale(2);
+  transform: rotate(-10deg) scale(2);
+}
+.model-7 .twitter {
+  color: #00ACED!important;
+}
+.model-7 .facebook {
+  color: #3B579D!important;
+}
+.model-7 .google-plus {
+  color: #DD4A3A!important;
+}
+.model-7 .linkedin {
+  color: #007BB6!important;
+}
+.model-7 .pinterest {
+  color: #CB2026!important;
+}
+}
+
+
+/*certifications*/
+.text-primary {
+  color: #49BF4C !important;
+}
+
+.headcolor
+{
+   color: #002633;
+}
+
+
+.certificate img  {
+  border:0;
+  display:block;
+  height:100px;
+  width:100px;
+
+}
+
+
+
+/*form*/
+form { max-width:420px; margin:20px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:5;
+  font-size: 16px;
+  border-radius: 5px;
+  line-height: 16px;
+  background-color: transparent;
+  border:2px solid #66cc8a;
+  transition: all 0.3s;
+  padding: 10px;
+  margin-bottom: 4px;
+
+  width:90%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #eaf5f9a1; }
+
+textarea {
+  height: 100px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 30%;
+  background:#66cc8a;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:17px;
+  padding-top:5px;
+  padding-bottom:5px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#eaf5f9a1; }
+
+/* Contact Form Styling - Blue Theme */
+.footer-box form input,
+.footer-box form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #29b6f6;   /* Blue border */
+    background: #0d47a1;         /* Blue background */
+    color: #fff;                 /* White text */
+    font-size: 1em;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Placeholder color */
+.footer-box form input::placeholder,
+.footer-box form textarea::placeholder {
+    color: #90caf9; /* Light blue placeholder */
+}
+
+/* On focus, add glowing effect */
+.footer-box form input:focus,
+.footer-box form textarea:focus {
+    border-color: #00AEEF;
+    box-shadow: 0 0 10px rgba(41,182,246,0.8);
+    background: #1565c0; /* Slightly lighter blue */
+}
+
+/* Submit Button */
+.footer-box form button {
+    background: #29b6f6;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 100%;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.footer-box form button:hover {
+    background: #0288d1; /* Darker blue on hover */
+}
+/* Contact Form Inputs */
+.footer-box form input,
+.footer-box form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* soft border */
+    border-radius: 8px;
+    background: #f9f9f9; /* subtle light background */
+    font-size: 14px;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+/* Focus Effect */
+.footer-box form input:focus,
+.footer-box form textarea:focus {
+    border-color: #29b6f6;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(41, 182, 246, 0.3);
+    outline: none;
+}
+
+/* Placeholder Styling */
+.footer-box form input::placeholder,
+.footer-box form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Submit Button */
+.footer-box form button {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 10px;
+    background: #29b6f6; /* primary theme color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Modern Contact Form Styles */
+.footer-box form input,
+.footer-box form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+/* Focus effect for inputs and textarea */
+.footer-box form input:focus,
+.footer-box form textarea:focus {
+    border-color: #29b6f6; /* primary app color */
+    background: #fff;
+    box-shadow: 0 0 8px rgba(41, 182, 246, 0.3);
+    outline: none;
+}
+
+/* Placeholder styling */
+.footer-box form input::placeholder,
+.footer-box form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Textarea height */
+.footer-box form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit Button Styling */
+.footer-box form button {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 10px;
+    background: #29b6f6; /* primary app color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.footer-box form button:hover {
+    background: #1e88e5;
+    box-shadow: 0 4px 15px rgba(41, 182, 246, 0.4);
+}

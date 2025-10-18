@@ -1,0 +1,544 @@
+/* General Body */
+body.careers-page {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Hero Section */
+.careers-hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    z-index: 1;
+}
+.careers-hero .container {
+    position: relative;
+    z-index: 2;
+}
+.careers-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.careers-hero p {
+    font-size: 1.2rem;
+}
+
+/* Why Join Us */
+.why-join h2 {
+    color: #01317a;
+}
+.why-join ul li {
+    font-size: 1rem;
+}
+.why-join ul li i {
+    color: #01317a;
+}
+
+/* Job Openings */
+.job-openings {
+    background-color: #f8f9fa;
+}
+.job-card {
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.job-card h3 {
+    color: #01317a;
+}
+.job-card .badge {
+    font-size: 0.85rem;
+    margin-right: 5px;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #01317a;
+    color: #fff;
+}
+.cta-section .btn-light {
+    font-weight: bold;
+    padding: 0.8rem 2rem;
+}
+
+/* Animate Job Cards */
+.job-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .careers-hero h1 {
+        font-size: 2rem;
+    }
+    .careers-hero p {
+        font-size: 1rem;
+    }
+}
+/* careers.css snippet */
+
+/* Initial hidden state */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* When visible */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button styling */
+.btn-cta {
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Job card styling */
+.job-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.tags span {
+  background: #f0f4ff;
+  color: #007bff;
+  font-size: 12px;
+  padding: 4px 10px;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+
+/* CTA section */
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #00c6ff, #007bff);
+  color: #fff;
+}
+
+.cta-section h2 {
+  margin-bottom: 10px;
+}
+/* ===== Hero Section Styling ===== */
+.careers-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Gradient animation */
+  background: linear-gradient(-45deg, #2193b0, #6dd5ed, #2193b0, #6dd5ed);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+
+  color: #fff;
+  padding: 100px 20px;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.careers-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.careers-hero p {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+}
+
+/* CTA Button */
+.btn-cta {
+  background: #fff;
+  color: #007bff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-cta:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Why Join Us section */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Job Cards */
+.job-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.job-card .tags {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.job-card .tags span {
+  display: inline-block;
+  background: #e7f3ff;
+  color: #007bff;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+
+.btn-apply {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+
+.btn-apply:hover {
+  background: #0056b3;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+/* careers.css */
+.careers-hero {
+  background: linear-gradient(135deg, #1e90ff, #00bfff); /* same gradient as Our Projects */
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.careers-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.careers-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #f1f1f1;
+}
+
+.btn-cta {
+  background: #fff;
+  color: #007bff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-cta:hover {
+  background: #007bff;
+  color: #fff;
+}
+/* ✅ Careers Hero Section – same as Our Projects */
+.careers-hero {
+  position: relative;
+  width: 100%;
+  min-height: 60vh; /* same height */
+  background: linear-gradient(135deg, #29b6f6 0%, #1976d2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  margin-top: 70px; /* space for fixed navbar */
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Subtle animated glow effect (copied from hero-section) */
+.careers-hero::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 20%, transparent 70%);
+  animation: pulse 8s infinite linear;
+  z-index: 0;
+}
+
+@keyframes pulse {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.careers-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.careers-hero .underline {
+  width: 80px;
+  height: 4px;
+  background: #fff;
+  margin: 0 auto 20px;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.careers-hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #f1f1f1;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-cta {
+  background: #fff;
+  color: #1976d2;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-cta:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .careers-hero {
+    min-height: 40vh;
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+  .careers-hero h1 {
+    font-size: 28px;
+  }
+  .careers-hero p {
+    font-size: 15px;
+  }
+}
+
+/* Modal Container */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 9999;
+  padding-top: 60px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Close Button */
+.close {
+  color: #333;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: #29b6f6;
+}
+
+/* Form Inputs */
+.modal-content .form-group {
+  margin-bottom: 20px;
+}
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.modal-content button {
+  background: #29b6f6;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.modal-content button:hover {
+  background: #0288d1;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+.job-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  transition: 0.3s ease-in-out;
+}
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.btn-apply {
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.btn-apply:hover {
+  background-color: #084298;
+}
+.modal-content {
+  border-radius: 20px;
+}
+.modal-header {
+  border-bottom: none;
+}
